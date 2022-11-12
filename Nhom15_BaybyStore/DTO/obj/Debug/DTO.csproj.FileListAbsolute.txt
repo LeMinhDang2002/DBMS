@@ -1,0 +1,12 @@
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DTO\bin\Debug\DTO.dll
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DTO\bin\Debug\DTO.pdb
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DTO\obj\Debug\DTO.dll
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DTO\obj\Debug\DTO.pdb
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DTO\bin\Debug\DTO.dll
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DTO\bin\Debug\DTO.pdb
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DTO\obj\Debug\DTO.dll
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DTO\obj\Debug\DTO.pdb

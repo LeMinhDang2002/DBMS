@@ -1,0 +1,18 @@
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\bin\Debug\DAL.dll
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\bin\Debug\DAL.pdb
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\bin\Debug\DTO.dll
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\bin\Debug\DTO.pdb
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\obj\Debug\DAL.dll
+D:\Study\2022-2023\HK1\Hệ quản trị CSDL\Project\Nhom15_BaybyStore\DAL\obj\Debug\DAL.pdb
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\bin\Debug\DAL.dll
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\bin\Debug\DAL.pdb
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\bin\Debug\DTO.dll
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\bin\Debug\DTO.pdb
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.dll
+D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.pdb
