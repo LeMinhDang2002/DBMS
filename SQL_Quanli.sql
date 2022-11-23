@@ -123,7 +123,7 @@ create proc proc_Update_Info_Store_Of_Employee @IDCH varchar(10)
 as
 begin
 	update NHANVIEN
-	set IdCH = '0'
+	set IdCH = null
 	where IdCH = @IDCH
 end
 
