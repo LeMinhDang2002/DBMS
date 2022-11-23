@@ -123,7 +123,7 @@ create proc proc_Update_Info_Store_Of_Employee @IDCH varchar(10)
 as
 begin
 	update NHANVIEN
-	set IdCH = null
+	set IdCH = '0'
 	where IdCH = @IDCH
 end
 
@@ -131,31 +131,18 @@ drop proc if exists proc_Update_Info_Store_Of_Warehouse
 create proc proc_Update_Info_Store_Of_Warehouse @IDCH varchar(10)
 as
 begin
-	update KHO_TEST
-	set IdCH = null
+	update KHO_TEST -- đổi tên Table lại
+	set IdCH = 'CH1'
 	where IdCH = @IDCH
 end
 
---exec dbo.proc_Update_Info_Store_Of_Warehouse 'CH1'
-
-drop proc if exists proc_Update_Info_Store_Of_Import_Stock
-create proc proc_Update_Info_Store_Of_Import_Stock @IDCH varchar(10)
-as
-begin
-	update NHAPHANG_TEST
-	set IdCH = null
-	where IdCH = @IDCH
-end
-
-exec dbo.proc_Update_Info_Store_Of_Import_Stock 'CH1'
 
 drop proc if exists proc_Delete_Store
-alter proc proc_Delete_Store @IDCH varchar(10)
+create proc proc_Delete_Store @IDCH varchar(10)
 as
 begin
 	exec dbo.proc_Update_Info_Store_Of_Employee @IDCH
 	exec dbo.proc_Update_Info_Store_Of_Warehouse @IDCH
-	exec dbo.proc_Update_Info_Store_Of_Import_Stock @IDCH
 
 	update CUAHANG
 	set IdQL = null
@@ -165,12 +152,11 @@ begin
 end
 
 select * from CUAHANG
-exec dbo.proc_Delete_Store 'CH2'
+exec dbo.proc_Delete_Store 'CH4'
 
 select * from CUAHANG
 select * from NHANVIEN
 select * from KHO_TEST
-select * from NHAPHANG_TEST
 
 --Xóa Cửa Hàng-----------
 
