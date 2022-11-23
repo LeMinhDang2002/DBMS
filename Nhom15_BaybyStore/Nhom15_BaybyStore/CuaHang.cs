@@ -59,5 +59,14 @@ namespace Nhom15_BaybyStore
             txtDiaChi.Text = dgvCuaHang.Rows[i].Cells["Diachi"].Value.ToString();
             txtIDQuanLy.Text = dgvCuaHang.Rows[i].Cells["IdQL"].Value.ToString();
         }
+
+        private void btnXoaCuaHang_Click(object sender, EventArgs e)
+        {
+            CuaHang_DTO store = new CuaHang_DTO();
+            store.IdCH = txtIDCH.Text;
+
+            BUS.Store_BUS.Delete_Store(store);
+            CuaHang_Load(sender, e);
+        }
     }
 }

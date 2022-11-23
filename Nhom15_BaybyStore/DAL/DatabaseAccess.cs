@@ -9,7 +9,7 @@ namespace DAL
         public SqlConnection conn = null;*/
         public static SqlConnection ConnectionDatabase()
         {
-            SqlConnection conn = new SqlConnection("Data Source=DANG;Initial Catalog=BaybyStore;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=DANG;Initial Catalog=BabyStore;Integrated Security=True");
             return conn;
         }
         /*public void OpenConnection()

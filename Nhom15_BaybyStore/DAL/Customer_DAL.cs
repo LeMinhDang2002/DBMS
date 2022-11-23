@@ -41,7 +41,7 @@ namespace DAL
         public static void Insert_Cus(KhachHang_DTO customer)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.add_customer", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_add_cus", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@name", SqlDbType.NVarChar, 30).Value = customer.Hovaten;
             cmd.Parameters.Add("@point", SqlDbType.Int).Value = customer.Diem;
@@ -54,7 +54,7 @@ namespace DAL
         public static void Delete_Cus(KhachHang_DTO customer)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.del_customer", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_del_cus", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@phonenumber", SqlDbType.Char, 11).Value = customer.Sdt;
 
@@ -65,7 +65,7 @@ namespace DAL
         public static void Update_Cus(KhachHang_DTO customer)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.update_customer", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_update_cus", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@ID_cus", SqlDbType.Char, 10).Value = customer.IdKH;
             cmd.Parameters.Add("@name", SqlDbType.NVarChar, 30).Value = customer.Hovaten;

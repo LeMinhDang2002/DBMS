@@ -82,7 +82,7 @@ as
 begin
 	select dbo.func_Check_Info(@str)
 end
-select dbo.func_Check_Info('NV009')
+select dbo.func_Check_Info('NV010')
 
 ------------------------------------------------
 ----------------------------------------------------
@@ -118,6 +118,7 @@ begin
 				exec Update_IDCH_for_Emp @idch, @ManagerID
 
 			commit transaction
+			print @tmp
 		end try
 		begin catch
 			rollback transaction
@@ -127,7 +128,7 @@ go
 
 -- Hình như là có nhân viên trước rồi mới thêm 1 của hàng được
 select * from NHANVIEN
-exec transaction_proc_add_store '...','...'
+exec transaction_proc_add_store 'Pham Dong','NV006'
 
 drop proc if exists transaction_proc_update_store 
 create proc transaction_proc_update_store 
@@ -161,9 +162,11 @@ create proc proc_Update_Info_Store_Of_Employee @IDCH varchar(10)
 as
 begin
 	update NHANVIEN
-	set IdCH = '0'
+	set IdCH = null
 	where IdCH = @IDCH
 end
+
+exec proc_Update_Info_Store_Of_Employee 'CH6'
 
 drop proc if exists proc_Update_Info_Store_Of_Warehouse
 create proc proc_Update_Info_Store_Of_Warehouse @IDCH varchar(10)
@@ -174,6 +177,7 @@ begin
 	where IdCH = @IDCH
 end
 
+exec proc_Update_Info_Store_Of_Warehouse 'CH4'
 
 drop proc if exists transaction_proc_Delete_Store
 create proc transaction_proc_Delete_Store @IDCH varchar(10)
@@ -197,7 +201,7 @@ begin
 end
 
 select * from CUAHANG
-exec dbo.transaction_proc_Delete_Store 'CH2'
+exec dbo.transaction_proc_Delete_Store 'CH6'
 
 
 -- Cửa Hàng--------------------------------------------------------------------------------------------------------

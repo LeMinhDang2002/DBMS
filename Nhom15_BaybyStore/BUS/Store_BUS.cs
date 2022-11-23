@@ -26,5 +26,9 @@ namespace BUS
         {
             return DAL.Store_DAL.Search_Store(str);
         }
+        public static void Delete_Store(CuaHang_DTO store)
+        {
+            DAL.Store_DAL.Delete_Store(store);
+        }
     }
 }

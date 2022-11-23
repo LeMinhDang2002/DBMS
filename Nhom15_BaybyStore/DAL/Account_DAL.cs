@@ -43,7 +43,7 @@ namespace DAL
         public static void Insert_Account(TaiKhoan_DTO account)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.proc_add_account", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_add_account", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@account", SqlDbType.Char, 30).Value = account.IdTK;
             cmd.Parameters.Add("@password", SqlDbType.Char, 15).Value = account.Matkhau;
@@ -56,7 +56,7 @@ namespace DAL
         public static void Delete_Accout(TaiKhoan_DTO account)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.proc_del_account", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_delete_account", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@account", SqlDbType.Char, 30).Value = account.IdTK;
 
@@ -67,7 +67,7 @@ namespace DAL
         public static void Update_Account(TaiKhoan_DTO account)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.proc_update_account", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_update_account", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@account", SqlDbType.Char, 30).Value = account.IdTK;
             cmd.Parameters.Add("@password", SqlDbType.Char, 15).Value = account.Matkhau;

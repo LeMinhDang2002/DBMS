@@ -39,7 +39,7 @@ namespace DAL
         public static void Insert_Store(CuaHang_DTO store)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.proc_Add_CH", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_add_store", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Address", SqlDbType.NVarChar, 30).Value = store.Diachi;
             cmd.Parameters.Add("@ManagerID", SqlDbType.Char, 10).Value = store.IdQL;
@@ -52,11 +52,22 @@ namespace DAL
         public static void Update_Store(CuaHang_DTO store)
         {
             SqlConnection conn = DatabaseAccess.ConnectionDatabase();
-            SqlCommand cmd = new SqlCommand("dbo.proc_UpdateCH", conn);
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_update_store", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Address", SqlDbType.NVarChar, 30).Value = store.Diachi;
             cmd.Parameters.Add("@IDMgr", SqlDbType.Char, 10).Value = store.IdQL;
             cmd.Parameters.Add("@IdCH", SqlDbType.Char, 10).Value = store.IdCH;
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static void Delete_Store(CuaHang_DTO store)
+        {
+            SqlConnection conn = DatabaseAccess.ConnectionDatabase();
+            SqlCommand cmd = new SqlCommand("dbo.transaction_proc_Delete_Store", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@IDCH", SqlDbType.Char, 10).Value = store.IdCH;
 
             conn.Open();
             cmd.ExecuteNonQuery();

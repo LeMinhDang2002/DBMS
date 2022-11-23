@@ -230,6 +230,7 @@
             this.btnXoaCuaHang.TabIndex = 87;
             this.btnXoaCuaHang.Text = "Xóa";
             this.btnXoaCuaHang.UseVisualStyleBackColor = false;
+            this.btnXoaCuaHang.Click += new System.EventHandler(this.btnXoaCuaHang_Click);
             // 
             // btnThemCuaHang
             // 

@@ -16,3 +16,12 @@ D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.Core
 D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.dll
 D:\20133034\Nhom15_BaybyStore_01\Nhom15_BaybyStore\DAL\obj\Debug\DAL.pdb
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\bin\Debug\DAL.dll
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\bin\Debug\DAL.pdb
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\bin\Debug\DTO.dll
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\bin\Debug\DTO.pdb
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\obj\Debug\DAL.dll
+C:\Users\20133\DBMS\Nhom15_BaybyStore\DAL\obj\Debug\DAL.pdb
